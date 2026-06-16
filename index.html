@@ -7,27 +7,25 @@
 .kpis{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0 24px}
 .kpi{flex:1;min-width:140px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
 .kpi .l{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.4px}.kpi .v{font-size:23px;font-weight:700;margin-top:3px}
-.v.red{color:var(--red)}.v.grn{color:var(--grn)}.v.blue{color:var(--blue)}.v.amber{color:var(--amber)}
+.v.red{color:var(--red)}.v.grn{color:var(--grn)}.v.blue{color:var(--blue)}
 table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:14px}
 th,td{padding:9px 10px;text-align:right;border-bottom:1px solid var(--line)}
 th{background:#1c232c;color:var(--mut);font-size:11px;text-transform:uppercase;letter-spacing:.4px}
 td.city,th.city{text-align:left;font-weight:600}tr.win{background:rgba(63,185,80,.08)}
 .rev{color:var(--grn);font-weight:600}.new{color:var(--blue);font-weight:700}.np.pos{color:var(--grn)}.np.neg{color:var(--red)}.gc{color:var(--amber);font-size:11px}
 tfoot td{font-weight:700;background:#1c232c;border-top:2px solid var(--line)}
-.note{background:#1a1410;border:1px solid #3a2a14;border-radius:10px;padding:12px 16px;margin:18px 0;font-size:13px;color:#e8d9b8}
-.note b{color:var(--amber)}.miss{background:#1a1014;border:1px solid #4a1f2a;border-radius:10px;padding:14px 16px;margin:18px 0}
-.miss h3{margin:0 0 8px;color:var(--red);font-size:15px}.miss table{font-size:13px}.miss .amt{color:var(--grn);font-weight:600}
-h2{font-size:18px;margin:30px 0 10px}ul{margin:6px 0;padding-left:20px}li{margin:5px 0;color:var(--mut)}li b{color:var(--txt)}
+.note{background:#101a14;border:1px solid #1f3a26;border-radius:10px;padding:12px 16px;margin:18px 0;font-size:13px;color:#cdeBD6;color:#bfe6cd}
+.note b{color:var(--grn)}h2{font-size:18px;margin:30px 0 10px}ul{margin:6px 0;padding-left:20px}li{margin:5px 0;color:var(--mut)}li b{color:var(--txt)}
 .foot{color:var(--mut);font-size:12px;text-align:center;margin-top:34px}
 </style></head><body><div class="wrap">
-<h1>📊 RingOnDemand — Budget Reallocation</h1>
-<p class="sub">Jun 8–16, 2026 · Google spend vs. Ringba RTB revenue · traced caller → your number → RTB sale</p>
-<span class="tag">✓ Littleton $240 RTB call now credited · 6 of 15 paid calls mapped</span>
+<h1>📊 RingOnDemand — Budget Reallocation <span style="font-size:13px;color:var(--grn)">✓ FINAL</span></h1>
+<p class="sub">Jun 8–16, 2026 · revenue = our-traffic only (dialled number must be in your sheet)</p>
+<span class="tag">✓ 6 paid calls from our numbers · 9 non-our-traffic calls excluded</span>
 <div class="kpis">
  <div class="kpi"><div class="l">Google Spend</div><div class="v red">$4,441</div></div>
- <div class="kpi"><div class="l">Plumbing Revenue (total)</div><div class="v grn">$1,361</div></div>
- <div class="kpi"><div class="l">Mapped to a city</div><div class="v grn">$931</div></div>
- <div class="kpi"><div class="l">Awaiting number map</div><div class="v amber">$429</div></div>
+ <div class="kpi"><div class="l">Our-Traffic Revenue</div><div class="v grn">$931</div></div>
+ <div class="kpi"><div class="l">Net P&amp;L</div><div class="v red">−$3,510</div></div>
+ <div class="kpi"><div class="l">Paid Calls (ours)</div><div class="v">6</div></div>
  <div class="kpi"><div class="l">New Daily Cap</div><div class="v blue">$480</div></div>
 </div>
 <table>
@@ -84,31 +82,16 @@ h2{font-size:18px;margin:30px 0 10px}ul{margin:6px 0;padding-left:20px}li{margin
       <td>$80</td><td>$0</td><td>0</td><td>0</td>
       <td class="rev">$0</td><td class="np pos">+$0</td>
       <td class="new">$18</td></tr></tbody>
-<tfoot><tr><td class="city">TOTAL (mapped)</td><td>$1450/day</td><td>$4,441</td><td>73</td><td>6</td><td>$931</td><td class="np neg">−$3,510</td><td>$480/day</td></tr></tfoot>
+<tfoot><tr><td class="city">TOTAL</td><td>$1450/day</td><td>$4,441</td><td>73</td><td>6</td><td>$931</td><td class="np neg">−$3,510</td><td>$480/day</td></tr></tfoot>
 </table>
-<div class="miss">
-<h3>⚠️ 9 paid calls ($429) still need a city — they came in on pool numbers not in the sheet</h3>
-<table><thead><tr><th class="city">Came in on (pool #)</th><th>Area</th><th>Revenue</th><th class="city">→ Which city?</th></tr></thead><tbody>
-<tr><td class="city">+1 770-588-0009</td><td>Atlanta</td><td class="amt">$76.80</td><td class="city">?</td></tr>
-<tr><td class="city">+1 203-303-9867</td><td>Connecticut</td><td class="amt">$66.00</td><td class="city">?</td></tr>
-<tr><td class="city">+1 708-255-8287</td><td>Chicago</td><td class="amt">$64.51</td><td class="city">?</td></tr>
-<tr><td class="city">+1 732-576-0085</td><td>New Jersey</td><td class="amt">$64.00</td><td class="city">?</td></tr>
-<tr><td class="city">+1 301-786-0363</td><td>Maryland</td><td class="amt">$48.00</td><td class="city">?</td></tr>
-<tr><td class="city">+1 818-806-6998</td><td>LA Valley</td><td class="amt">$43.92</td><td class="city">?</td></tr>
-<tr><td class="city">+1 850-753-6492</td><td>Florida</td><td class="amt">$34.00</td><td class="city">?</td></tr>
-<tr><td class="city">+1 413-614-3673</td><td>Massachusetts</td><td class="amt">$31.08</td><td class="city">?</td></tr>
-<tr><td class="city">+1 659-244-6485</td><td>Alabama</td><td class="amt">$1.07</td><td class="city">?</td></tr>
-</tbody></table>
-</div>
-<div class="note"><b>Why these can't be guessed.</b> Ringba assigns pool numbers to a city regardless of area code, so a "770 Atlanta" number can be a Littleton pool number. Only your sheet knows. Send the full <b>number→city .xlsx</b> (or just tell me the city for these 9 numbers) and every dollar of the $1,361 maps. Total plumbing revenue in the file = <b>$1,361</b> from 15 paid calls; 73 of 351 inbound calls are mapped so far.</div>
-<h2>🎯 New budgets — cap ≈$480/day (under Leo's $500)</h2>
+<div class="note"><b>✓ Revenue is final.</b> Counted only the 6 paid calls whose <b>dialled number is in your tracking sheet</b> = <b>$931</b>. Excluded <b>9 paid calls ($429)</b> that came in on pool numbers NOT in your sheet (770/203/708/732/301/818/850/413/659…) — per your call, that's not our traffic (other publishers feeding the same RTB). So our true take from this spend is <b>$931</b>, not the $1,360 gross RTB total.</div>
+<h2>🎯 Final budgets — cap ≈$480/day (under Leo's $500)</h2>
 <ul>
- <li><b>Littleton $50</b> — now your top earner ($413 rev, near break-even).</li>
- <li>Denver $45 · Portland $45 · Boulder $40 · West Covina $35 (only profitable city) — confirmed earners.</li>
- <li>Santa Barbara $40 · Boise $45 — watch cities (Google calls / highest volume, no paid yet).</li>
- <li><b>Floor the other 10 at $18</b> — alive for replicability, but no more bleed.</li>
- <li><b>Hardest cuts:</b> Colorado Springs ($512 → $18) and Aurora ($332 → $18): biggest spend, zero return.</li>
- <li><i>Budgets finalize once the 9 calls above are mapped — they could shift weight.</i></li>
+ <li><b>Littleton $50</b> — top earner, near break-even ($413 rev / $428 spend).</li>
+ <li>Denver $45 · Portland $45 · Boulder $40 · West Covina $35 — confirmed earners (West Covina the only profitable city).</li>
+ <li>Santa Barbara $40 · Boise $45 — watch cities (Google calls / most volume, no paid yet).</li>
+ <li><b>Floor the other 10 at $18/day</b> — alive for replicability, no more bleed.</li>
+ <li><b>Hardest cuts:</b> Colorado Springs ($512 spent → $18) & Aurora ($332 → $18): biggest spend, zero return.</li>
 </ul>
-<p class="foot">RingOnDemand internal · Google Ads + Ringba RTB export · caller→number→RTB traced</p>
+<p class="foot">RingOnDemand internal · revenue = our-traffic only · 73+ inbound calls on sheet numbers</p>
 </div></body></html>
